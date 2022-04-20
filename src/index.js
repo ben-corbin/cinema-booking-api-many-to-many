@@ -18,7 +18,12 @@ app.use(express.urlencoded({ extended: true }));
 
 // Add your router below
 
+const ticketRouter = require('./routers/ticket');
+app.use('/ticket', ticketRouter)
 
+
+const screenRouter = require('./routers/screen');
+app.use('/screen', screenRouter)
 
 
 
